@@ -73,16 +73,26 @@ main {
 	border-radius: 4px;
 }
 
+.main-img {
+	display: none;
+	visibility: hidden;
+}
+
 .rating {
 	margin: 2rem 0;
 	display: flex;
 	align-items: center;
+	padding: 0 1rem;
 }
 
 .rating-logos {
 	margin-left: auto;
 	display: flex;
 	gap: 10px;
+}
+
+.trusted {
+	padding: 0 1rem;
 }
 
 .trusted-title {
@@ -101,4 +111,42 @@ main {
 .companies img {
 	max-width: 100%;
 	display: block;
+}
+
+@media (min-width: 600px) {
+	.main-img {
+		display: initial;
+		visibility: visible;
+	}
+
+	main {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1rem;
+		align-items: center;
+		justify-items: end;
+	}
+
+	.main-img img {
+		width: 100%;
+		max-width: 360px;
+		display: block;
+	}
+
+	.rating {
+		padding: 0;
+	}
+
+	.rating-logos {
+		margin-left: 1rem;
+	}
+
+	.trusted {
+		padding-top: 2.5rem;
+	}
+
+	.companies {
+		grid-template-columns: repeat(4, 1fr);
+		gap: 2rem;
+	}
 }
