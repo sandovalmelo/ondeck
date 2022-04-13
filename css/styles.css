@@ -1,0 +1,102 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+:root {
+	--bg-color: #f1ebe3;
+	--btn-color: #143417;
+	--font-color: #8b8b8b;
+	--h1-highlight: #f6b301;
+
+	--dropdown-title: #0a263f;
+	--dropdown-text: #7e8d9a;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--bg-color);
+	color: var(--font-color);
+	font-family: "Inter", sans-serif;
+}
+
+h2 {
+	font-size: 0.85rem;
+	font-weight: 600;
+}
+
+a {
+	text-decoration: none;
+	font-weight: 600;
+}
+
+nav {
+	padding: 1rem;
+	display: flex;
+	align-items: center;
+}
+
+.menu-icon {
+	margin-left: auto;
+}
+
+main {
+	padding: 1rem;
+}
+
+.main-title {
+	color: #000;
+}
+
+.main-text {
+	font-size: 0.9rem;
+	line-height: 1.5;
+	margin: 1rem 0;
+}
+
+.highlight {
+	color: var(--h1-highlight);
+}
+
+.btn {
+	background-color: var(--btn-color);
+	color: var(--bg-color);
+	display: inline-block;
+	padding: 1.05rem 1.65rem;
+	border-radius: 4px;
+}
+
+.rating {
+	margin: 2rem 0;
+	display: flex;
+	align-items: center;
+}
+
+.rating-logos {
+	margin-left: auto;
+	display: flex;
+	gap: 10px;
+}
+
+.trusted-title {
+	margin-bottom: 1.5rem;
+}
+
+.companies {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1rem;
+	place-items: center;
+}
+
+.companies img {
+	max-width: 100%;
+	display: block;
+}
