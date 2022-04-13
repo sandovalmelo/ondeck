@@ -24,6 +24,7 @@ body {
 	background-color: var(--bg-color);
 	color: var(--font-color);
 	font-family: "Inter", sans-serif;
+	min-height: 100vh;
 }
 
 h2 {
@@ -85,6 +86,7 @@ main {
 }
 
 .trusted-title {
+	text-align: center;
 	margin-bottom: 1.5rem;
 }
 
