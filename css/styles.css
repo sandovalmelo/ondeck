@@ -35,16 +35,35 @@ h2 {
 a {
 	text-decoration: none;
 	font-weight: 600;
+	color: inherit;
+}
+
+li {
+	list-style: none;
 }
 
 nav {
 	padding: 1rem;
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 }
 
 .menu-icon {
 	margin-left: auto;
+}
+
+.menu {
+	display: flex;
+}
+
+.menu li {
+	margin: 0 0.5rem;
+	padding: 0.5rem;
+}
+
+.sign-in-btn {
+	margin-right: 1rem;
 }
 
 main {
@@ -114,6 +133,11 @@ main {
 }
 
 @media (min-width: 600px) {
+	.menu-icon {
+		display: none;
+		visibility: hidden;
+	}
+
 	.main-img {
 		display: initial;
 		visibility: visible;
@@ -148,5 +172,23 @@ main {
 	.companies {
 		grid-template-columns: repeat(4, 1fr);
 		gap: 2rem;
+	}
+}
+
+@media (min-width: 1200px) {
+	nav,
+	main,
+	.trusted {
+		max-width: 1080px;
+		margin: 0 auto;
+	}
+}
+
+@media (min-width: 1440px) {
+	nav,
+	main,
+	.trusted {
+		max-width: 1300px;
+		margin: 0 auto;
 	}
 }
