@@ -53,8 +53,9 @@ nav {
 	margin-left: auto;
 }
 
-.menu {
-	display: flex;
+.menu,
+.menu-btns {
+	display: none;
 }
 
 .menu li {
@@ -101,7 +102,6 @@ main {
 	margin: 2rem 0;
 	display: flex;
 	align-items: center;
-	padding: 0 1rem;
 }
 
 .rating-logos {
@@ -133,11 +133,6 @@ main {
 }
 
 @media (min-width: 600px) {
-	.menu-icon {
-		display: none;
-		visibility: hidden;
-	}
-
 	.main-img {
 		display: initial;
 		visibility: visible;
@@ -167,11 +162,27 @@ main {
 
 	.trusted {
 		padding-top: 2.5rem;
+		padding-bottom: 2.5rem;
 	}
 
 	.companies {
 		grid-template-columns: repeat(4, 1fr);
 		gap: 2rem;
+	}
+}
+
+@media (min-width: 859px) {
+	.menu-icon {
+		display: none;
+		visibility: hidden;
+	}
+
+	.menu {
+		display: flex;
+	}
+
+	.menu-btns {
+		display: block;
 	}
 }
 
