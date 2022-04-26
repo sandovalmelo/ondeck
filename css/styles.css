@@ -77,17 +77,27 @@ nav {
 	right: 1rem;
 	padding: 2rem;
 	border-radius: 15px;
+	display: none;
+}
+
+.menu-container.active .dropdown {
+	display: block;
 }
 
 .dropdown-menu {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	margin-bottom: 1.5rem;
+	margin-bottom: 1.75rem;
 }
 
-.dropdown-section {
-	margin: 1rem 0;
+.dropdown-title {
+	color: var(--dropdown-text);
+	text-transform: uppercase;
+}
+
+.dropdown-section ~ .dropdown-section {
+	margin-top: 1.75rem;
 }
 
 .dropdown-section-header {
@@ -95,6 +105,10 @@ nav {
 	align-items: center;
 	gap: 0.5rem;
 	margin-bottom: 0.25rem;
+}
+
+.dropdown-section-title {
+	color: var(--dropdown-title);
 }
 
 .dropdown-section-text {
@@ -208,9 +222,27 @@ main {
 }
 
 @media (min-width: 859px) {
+	nav,
+	main,
+	.trusted {
+		max-width: 960px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.menu-container.active #products,
+	.menu a:hover,
+	.sign-in-btn:hover {
+		filter: brightness(0.6);
+	}
+
 	.menu-icon {
 		display: none;
 		visibility: hidden;
+	}
+
+	.menu-container {
+		position: relative;
 	}
 
 	.menu {
@@ -220,6 +252,55 @@ main {
 	.menu-btns {
 		display: block;
 	}
+
+	.dropdown {
+		max-width: 460px;
+		top: 3rem;
+		left: -5rem;
+	}
+
+	.dropdown::after {
+		content: "";
+		display: block;
+		width: 0;
+		height: 0;
+		position: absolute;
+		top: -8px;
+		left: 120px;
+		border-left: 8px solid transparent;
+		border-right: 8px solid transparent;
+		border-bottom: 8px solid #fff;
+	}
+
+	.dropdown-menu {
+		margin-bottom: 0;
+	}
+
+	.dropdown-title {
+		display: none;
+	}
+
+	.dropdown-section ~ .dropdown-section {
+		margin-top: 1.75rem;
+	}
+
+	#close-icon {
+		cursor: pointer;
+		position: absolute;
+		right: 1.5rem;
+	}
+
+	main {
+		margin-top: 1rem;
+	}
+
+	.main-title {
+		font-size: 3.5rem;
+	}
+
+	.btn:hover {
+		filter: brightness(1.4);
+	}
 }
 
 @media (min-width: 1200px) {
@@ -227,7 +308,6 @@ main {
 	main,
 	.trusted {
 		max-width: 1080px;
-		margin: 0 auto;
 	}
 }
 
@@ -236,6 +316,5 @@ main {
 	main,
 	.trusted {
 		max-width: 1300px;
-		margin: 0 auto;
 	}
 }

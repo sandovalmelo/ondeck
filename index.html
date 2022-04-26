@@ -16,12 +16,49 @@
   <nav>
     <img src="./Assets//Logo.svg" alt="Logo" class="logo">
 
-    <ul class="menu">
-      <li><a href="#">Products</a></li>
-      <li><a href="#">Challenges</a></li>
-      <li><a href="#">Resources</a></li>
-      <li><a href="#">Other Links</a></li>
-    </ul>
+    <div class="menu-container" id="menu-container">
+      <ul class="menu">
+        <li><a href="#" id="products">Products</a></li>
+        <li><a href="#">Challenges</a></li>
+        <li><a href="#">Resources</a></li>
+        <li><a href="#">Other Links</a></li>
+      </ul>
+
+      <div class="dropdown" id="dropdown">
+        <div class="dropdown-menu">
+          <h3 class="dropdown-title">Products</h3>
+          <img src="./Assets/Close.svg" alt="Close Icon" id="close-icon">
+        </div>
+
+        <div class="dropdown-section">
+          <div class="dropdown-section-header">
+            <img src="./Assets/Spense_Icon.svg" alt="Spense Icon">
+            <h4 class="dropdown-section-title">Spense</h4>
+          </div>
+          <p class="dropdown-section-text">Spense is a landing page for wreiters. Great for practicing absolute
+            positioning and flex layouts.</p>
+        </div>
+
+        <div class="dropdown-section">
+          <div class="dropdown-section-header">
+            <img src="./Assets/Fiber_Icon.svg" alt="Fiber Icon">
+            <h4 class="dropdown-section-title">Fiber Landing Page</h4>
+          </div>
+          <p class="dropdown-section-text">An online portfolio generator. Great to practice flex/grid layouts, adn
+            absolute positioning.</p>
+        </div>
+
+        <div class="dropdown-section">
+          <div class="dropdown-section-header">
+            <img src="./Assets/Gradie_Icon.svg" alt="Spense Icon">
+            <h4 class="dropdown-section-title">Gradie Sign Up Page</h4>
+          </div>
+          <p class="dropdown-section-text">Gradie is a simple sign in page, great for practicing absolute
+            positioning and flex layouts.</p>
+        </div>
+
+      </div>
+    </div>
 
     <div class="menu-btns">
       <a href="#" class="sign-in-btn">Sign In</a>
@@ -29,42 +66,7 @@
     </div>
 
     <div class="menu-icon">
-      <img src="./Assets/Menu.svg" alt="Menu Icon">
-    </div>
-
-    <div class="dropdown">
-      <div class="dropdown-menu">
-        <h3 class="dropdown-title">Products</h3>
-        <img src="./Assets/Close.svg" alt="Close Icon">
-      </div>
-
-      <div class="dropdown-section">
-        <div class="dropdown-section-header">
-          <img src="./Assets/Spense_Icon.svg" alt="Spense Icon">
-          <h4 class="dropdown-section-title">Spense</h4>
-        </div>
-        <p class="dropdown-section-text">Spense is a landing page for wreiters. Great for practicing absolute
-          positioning and flex layouts.</p>
-      </div>
-
-      <div class="dropdown-section">
-        <div class="dropdown-section-header">
-          <img src="./Assets/Fiber_Icon.svg" alt="Fiber Icon">
-          <h4 class="dropdown-section-title">Fiber Landing Page</h4>
-        </div>
-        <p class="dropdown-section-text">An online portfolio generator. Great to practice flex/grid layouts, adn
-          absolute positioning.</p>
-      </div>
-
-      <div class="dropdown-section">
-        <div class="dropdown-section-header">
-          <img src="./Assets/Gradie_Icon.svg" alt="Spense Icon">
-          <h4 class="dropdown-section-title">Gradie Sign Up Page</h4>
-        </div>
-        <p class="dropdown-section-text">Gradie is a simple sign in page, great for practicing absolute
-          positioning and flex layouts.</p>
-      </div>
-
+      <img src="./Assets/Menu.svg" alt="Menu Icon" id="menu-icon">
     </div>
   </nav>
 
@@ -113,6 +115,8 @@
       </div>
     </div>
   </section>
+
+  <script src="./js/scripts.js"></script>
 </body>
 
 </html>
