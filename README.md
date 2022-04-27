@@ -2,6 +2,8 @@
 
 Codewell landing page challenge by [codewell.co](https://www.codewell.cc/) created with html, css & javascript
 
+![Preview image](/Assets/preview.png)
+
 ## Built with
 
 - HTML5
@@ -21,5 +23,3 @@ Codewell landing page challenge by [codewell.co](https://www.codewell.cc/) creat
 ## Biggest Challenges
 
 - Adapt the grid to large screens is a proccess that always require a lot of thought and experimentation. I needed to let the project aside for a few days so I could return and finish the site later.
-
-![Preview image](/Assets/preview.png)
