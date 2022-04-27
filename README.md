@@ -1,33 +1,25 @@
+# Javascript30 Navbar
 
-# Welcome to Codewell! 👋
+Codewell landing page challenge by [codewell.co](https://www.codewell.cc/) created with html, css & javascript
 
-Codewell's aim is to provide you with real-world design templates that you can use to practice your HTML and CSS projects. 
+## Built with
 
-Free or paid, all templates are high quality and will make great portfolio pieces.
+- HTML5
+- CSS
+- JavaScript
 
-### I've completed the challenge, now what?
+## My process
 
-We recommend using one of these two websites to deploy your projects
+- I coded the mobile version first so I could focus on improving the layout based ont he screen device. There are several break points because the small details that need to change based on the different screen sizes.
 
-- [GitHub Pages](https://pages.github.com/)
-- [Netlify](https://www.netlify.com/)
+- I coded a simple script file containing the logic behind the open and close process. The dropdown opens if the user clicks the product link, and closes when the close icon is clicked.
 
-They're super easy to setup and you should have your website up and running in no time, just follow their instructions.
+- The main section of the site is divided by two collumn grids. The first collumn is the main title with the subtitle and the call to action button. The other collumn is a image containing a application user profile photo.
 
+- The last section is a responsive brand companies grid.
 
-### Submit your solution to Codewell
+## Biggest Challenges
 
-Visit the relevant challenge on [Codewell](https://codewell.cc) and click on 'Submit Solution' right under the challenge.
-Enter all the title, Github repo URL, Live URL (Netlify or GH Pages), and tell the community what challenges you've faced.
+- Adapt the grid to large screens is a proccess that always require a lot of thought and experimentation. I needed to let the project aside for a few days so I could return and finish the site later.
 
-### Join our community on Slack
-
-If you want more real-time communication, you can visit our community on [Slack](https://join.slack.com/t/codewell-hq/shared_invite/zt-ni8c9g8h-gNYWrmqQ3Uh37dcLg9~LMQ). 
-
-### Wes Bos's Javascript30
-
-This challenge is best coupled with Day 22 of Wes Bos's [Javascript30](https://javascript30.com) course. 
-
-### Fonts Used
-
-https://fonts.google.com/specimen/Inter
+![Preview image](/Assets/preview.png)
